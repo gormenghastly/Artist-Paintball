@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PaintBall Artist</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/custom.css"/>
+</head>
+<body>
+
+    <div class="jumbo-tron text-center">
+        <h1 class="title">artist battles @ <span id="header">PAINTBALL</span></h1> 
+        <p>Click your artist player. Click your opponent. Then click the paint brush button and take your opponent's "paint" points.<br>Your opponent will return strokes after each of your clicks. If you loose your points first, you loose. If you win, select another artist to challenge until they are all defeated!</p>
+    </div>
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-2-lg">
+                <div class="circle" id="cir-t-1"></div>
+            </div>
+            <div class="col-2-lg">
+                <div class="circle text-center" id="cir-t-2">
+                    <br>
+                    <h5>player<br>damage<br>points</h5>
+                    <h5 id="player-damage">0</h5>
+                </div>
+            </div>
+            <div class="col-2-lg">
+                <div class="circle" id="cir-t-3"></div>
+            </div>
+            <div class="col-2-lg">
+                <div class="circle" id="cir-t-4">
+                    <img class="card-img" id="paint-brush" src="assets/images/paint-brush-2.png" class="img-fluid rounded-circle" alt="Responsive image">
+                </div>
+            </div>
+            <div class="col-2-lg">
+                <div class="circle" id="cir-t-5"></div>
+            </div> 
+            <div class="col-2-lg">
+                <div class="circle text-center" id="cir-t-6">
+                    <br>
+                    <h5>opponent<br>damage<br>points</h5>
+                    <h5 id="opponent-damage">0</h5>
+                </div>        
+            </div>
+
+        </div>
+        
+        <div class="row">
+
+            <div class="col-2-lg">
+                <div class="circle" id="cir-m-1"></div>
+            </div>
+            <div class="col-2-lg">                             
+                <div class="circle artist" id="cir-m-2">                          
+                    <img class="card-img" src="assets/images/warhol.jpg" class="img-fluid rounded-circle" alt="Responsive image">   
+                        <h6 class="card-title" id ="warhol">WARHOL<br><span class="points">145</span> pts</h6>
+                                            
+                </div>
+            </div>
+            <div class="col-2-lg">
+                <div class="circle artist" id="cir-m-3">
+                    <img class="card-img" src="assets/images/kahlo.jpg" class="img-fluid rounded-circle" alt="Responsive image">   
+                        <h6 class="card-title" id="kahlo">KAHLO<br><span class="points">175</span> pts</h6>      
+                </div>
+            </div>
+            <div class="col-2-lg">
+                <div class="circle" id="cir-m-4">                      
+                    <img class="card-img" src="assets/images/dali.jpg" class="img-fluid rounded-circle" alt="Responsive image">   
+                        <h6 class="card-title" id="dali">DALI<br><span class="points">190</span> pts</h6>                   
+                </div>
+            </div>
+            <div class="col-2-lg">
+                <div class="circle" id="cir-m-5">
+                    <img class="card-img" src="assets/images/okeeffe2.png" class="img-fluid rounded-circle" alt="Responsive image">    
+                        <h6 class="card-title" id="okeeffe">O'KEEFFE<br><span class="points">160</span> pts</h6>
+                </div>
+            </div>
+            <div class="col-2-lg">
+                <div class="circle" id="cir-m-6"></div>        
+            </div>
+    
+        </div>
+        
+        <div class="row">
+
+            <div class="col-2-lg">
+                <div class="circle text-center" id="cir-b-1">
+                    <br><br>
+                    <h5 id="start-again">start<br>again!</h5>
+                </div>
+            </div>
+            <div class="col-2-lg">
+                <div class="circle" id="cir-b-2"></div>
+            </div>
+            <div class="col-2-lg">
+                <div class="circle" id="cir-b-3"></div>
+            </div>
+            <div class="col-2-lg">
+                <div class="circle" id="cir-b-4"></div>
+            </div>
+            <div class="col-2-lg">
+                <div class="circle text-center" id="cir-b-5">
+                    <br><br>
+                    <h5 id="defeated">defeated<br>opponents</h5>
+                </div>
+            </div>
+            <div class="col-2-lg">
+                <div class="circle" id="cir-b-6"></div>        
+            </div>
+        
+        </div>
+
+
+
+
+
+
+    </div>
+
+
+
+    
+</body>
+</html>
